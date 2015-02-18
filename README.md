@@ -20,46 +20,28 @@ A row is also a 100% width table but it used to divide different areas of the em
 ### Column
 
 By default all columns are set to be 600px wide; This creates the main content area of the email. On this framework there are a number of pre-set columns ready to go such as:
-⋅⋅⋅ 1 column
-⋅⋅⋅ 2 column
-⋅⋅⋅ 3 column
-⋅⋅⋅ 4 column
+... 1 column
+... 2 column
+... 3 column
+... 4 column
 
 More will be added soon - but this is enough to get started with.
 
 ## Code breakdown
 
-This is an example of a panel that contains a row followed by a two column layout
-
-`<tr data-block-panel="basic">
-  <td>
-    <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" style="width: 600px;">
-      <tr data-block-row="two">
-        <td class="container-padding" valign="top">
-          <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
-            <tr>
-              <td class="w100p" valign="top" width="560">
-                <table border="0" cellpadding="0" cellspacing="0" class="w100p" align="left" width="270">
-                  <tr>
-                    <td>1/2</td>
-                  </tr>
-                </table>
-                <table border="0" cellpadding="0" cellspacing="0" align="right" class="w100p" width="270">
-                  <tr>
-                    <td>2/2</td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>`
-
-Currently the data-block-* do nothing, so they can be removed, they might act as a reference point however.
-
 `<table align="center" border="0" cellpadding="0" cellspacing="0" class="container" style="width: 600px;">`
 
-The table which is the child of the panel element is given the class of container 
+The table which is the child of the panel element is given the class of container and the width is set.
+
+Within this table a row is inserted
+
+`<tr data-block-row="one">`
+`    <td valign="top" class="container-padding" style="background-color: #fffffe;">`
+`       <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">`
+
+The `TD` is given the call of container-padding which sets the gutter of the template (the space left and right) to stop the content touching the sides - The background colour that is set here will span 600px
+
+Almost all `TABLE`s are given the attributes of `"border="0" cellpadding="0" cellspacing="0" style="width: 100%;"`
+
+
+

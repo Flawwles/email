@@ -3,12 +3,14 @@
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <!--[if gte mso 9]>
         <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <![endif]-->
         <style>
             /* =============================================================================
             Fixes
             ========================================================================== */
-            body{ width:100% !important; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; margin:0; padding:0;}
+            body { width:100% !important; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; margin:0; Margin:0; padding:0;}
             .ExternalClass {width:100%;}.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div { line-height:100%; }
             .backgroundTable { margin:0; padding:0; width:100% !important; line-height: 100% !important; table-layout:fixed !important;}
             p { margin-top:0; margin-left:0; margin-right:0; margin-bottom:0; padding:0; }
@@ -24,8 +26,9 @@
             *[class].container { width: 90% !important;}
             *[class].container-padding{ padding-left: 20px !important; padding-right: 20px !important;}
             *[class].w100p{ width:100% !important;}
-			*[class].w100p img{ width:100% !important; height:auto !important;}
-			*[class].static img{ width:inherit !important; height:auto !important;}
+            th[class].w100p{ width:100% !important;display:table !important;font-weight:normal !important;text-align:left !important;}
+            *[class].w100p img{ width:auto !important; height:auto !important; max-width: 100%;}
+            *[class].static img{ width:inherit !important; height:auto !important;}
             *[class].hide{ display: none !important;}
             /* Alignemnt */
             *[class].center-img img{margin: 0 auto;}
@@ -36,7 +39,7 @@
             /* Padding */
             *[class].pb10{padding-bottom:10px !important;}
             *[class].pt10{padding-top:10px !important;}
-			*[class].pb20{padding-bottom:20px !important;}
+            *[class].pb20{padding-bottom:20px !important;}
             *[class].pt20{padding-top:20px !important;}
             /* Reset */
             *[class].clear-padding{padding:0px !important;}
@@ -53,35 +56,37 @@
             /* =============================================================================
             Put inline for Gmail / Outlook
             ========================================================================== */
-            .container-padding{padding-left: 20px !important; padding-right: 20px !important;}
+            .container-padding {padding-left: 20px !important; padding-right: 20px !important;}
             .backgroundTable {width: 100%}
             .container {width: 600px;}
             img { outline:0; text-decoration:none; border:0;}
-            .s{font-size:1px; line-height:1px;}
-
+            .s {font-size:1px; line-height:1px;}
+            th {font-weight: normal; text-align: left;}
+  
             .text {
                 font-family:Arial, Helvetica, sans-serif; 
-                font-size:12px; 
+                font-size:16px; 
                 line-height:20px; 
                 color:#202020;
             }
 
             .title-lg {
                 font-family:Arial, Helvetica, sans-serif; 
-                font-size:12px; 
-                line-height:20px; 
+                font-size:26px; 
+                line-height:30px; 
                 color:#000001; 
                 font-weight:bold;
             }
             .title-md {
                 font-family:Arial, Helvetica, sans-serif; 
-                font-size:19px; 
+                font-size:20px; 
                 line-height:23px; 
                 color:#000001;
             }
 
             .title-sm {
                 font-family:Arial, Helvetica, sans-serif; 
+                text-transform: uppercase;
                 font-size:19px; 
                 line-height:23px; 
                 color:#000001;
@@ -141,6 +146,29 @@
                             </table>
                         </td>
                     </tr>
+                    <tr data-block-row="two">
+                        <td class="container-padding" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                  <th class="w100p">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="w100p" width="100%">
+                                      <tr>
+                                        <td>1/2</td>
+                                      </tr>
+                                    </table>
+                                  </th>
+                                  <th class="w100p s" width="10" height="10">&nbsp;</th>
+                                  <th class="w100p">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="w100p" width="100%">
+                                      <tr>
+                                        <td>2/3</td>
+                                      </tr>
+                                    </table>
+                                  </th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
                     <tr data-block-row="three">
                         <td class="container-padding" valign="top">
                             <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
@@ -174,6 +202,37 @@
                                             </tr>
                                         </table>
                                     </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr data-block-row="three">
+                        <td class="container-padding" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                  <th class="w100p">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="w100p" width="100%">
+                                      <tr>
+                                        <td>1/2</td>
+                                      </tr>
+                                    </table>
+                                  </th>
+                                  <th class="w100p s" width="10" height="10">&nbsp;</th>
+                                  <th class="w100p">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="w100p" width="100%">
+                                      <tr>
+                                        <td>2/3</td>
+                                      </tr>
+                                    </table>
+                                  </th>
+                                  <th class="w100p s" width="10" height="10">&nbsp;</th>
+                                  <th class="w100p">
+                                    <table border="0" cellpadding="0" cellspacing="0" class="w100p" width="100%">
+                                      <tr>
+                                        <td>2/3</td>
+                                      </tr>
+                                    </table>
+                                  </th>
                                 </tr>
                             </table>
                         </td>
